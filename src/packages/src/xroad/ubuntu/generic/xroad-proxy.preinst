@@ -69,7 +69,7 @@ if  [ "$1" = "reconfigure" ];
 fi
 
 # Get database connection string from the user
-db_input critical xroad-common/db-connection || true
+db_input critical xroad-common/database-host || true
 db_go
 
 #check certificates and request neccesary subject information from user

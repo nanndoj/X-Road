@@ -1,8 +1,8 @@
-Template: xroad-common/db-connection
+Template: xroad-common/database-host
 Type: string
-Default: jdbc:postgresql://127.0.0.1:5432
+Default: 127.0.0.1:5432
 Description: Insert database server connection string
- This will be used to connect to the database.
+ This will be used by the Security Server to connect to the database host.
 
 Template: xroad-common/admin-subject
 Type: string
