@@ -69,13 +69,8 @@ if  [ "$1" = "reconfigure" ];
 fi
 
 # Get database connection string from the user
-db_url=jdbc:postgresql://127.0.0.1:5432/${db_name}
-db_set xroad-common/db-connection "$db_url"
 db_input critical xroad-common/db-connection || true
 db_go
-RET=
-db_get xroad-common/db-connection
-db_url="$RET"
 
 #check certificates and request neccesary subject information from user
 HOST=`hostname -f`

@@ -1,5 +1,6 @@
 Template: xroad-common/db-connection
 Type: string
+Default: jdbc:postgresql://127.0.0.1:5432
 Description: Insert database server connection string
  This will be used to connect to the database.
 
