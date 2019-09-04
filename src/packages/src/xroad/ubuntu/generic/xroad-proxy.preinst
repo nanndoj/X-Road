@@ -62,6 +62,7 @@ function handle_error {
 
 if  [ "$1" = "reconfigure" ];
   then
+    db_fset xroad-common/database-host seen false
     db_fset xroad-common/admin-subject seen false
     db_fset xroad-common/admin-altsubject seen false
     db_fset xroad-common/service-subject seen false
